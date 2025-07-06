@@ -109,6 +109,7 @@ Still stuck, [Open issue here](https://github.com/AJaySi/AI-Writer/issues) & Som
 |---------------------------------------|---------------------------------------------------------------------------|
 | AI Content Outline Generator       | Generates outlines based on keywords gathered from web research.               |
 | AI SEO - Generate rich snippet from url | Creates structured data for rich snippets (e.g., reviews, recipes) |
+| DataForSEO SEO Analyzer           | Comprehensive SEO audit and keyword ideas powered by DataForSEO |
 
 **AI Content Planning Tools:**
 
@@ -124,7 +125,7 @@ Still stuck, [Open issue here](https://github.com/AJaySi/AI-Writer/issues) & Som
 | Tool                                  | Description                                                                 |
 |---------------------------------------|---------------------------------------------------------------------------|
 | AI Web Researcher                  | Conducts comprehensive web research and analysis using various methods.        |
-| Talk to your Docs (WIP)            | Write content from your local documents of any type (multi-modal)               |
+| Doc Summarizer                     | Summarize local documents (txt, pdf, docx) into concise notes |
 
 **Integrations:**
 
@@ -161,11 +162,13 @@ Still stuck, [Open issue here](https://github.com/AJaySi/AI-Writer/issues) & Som
 
 **📸  Visualize Your Content:**
 
-* **Image Generation and Processing:**  ✨  Create stunning images based on your blog content using DALL-E 3 and Stable Diffusion.  Optimize your images for web use.  (FIXME: More Stable Diffusion magic to come!) 
+* **Image Generation and Processing:**  ✨  Create stunning images based on your blog content using DALL-E 3 and Stable Diffusion.  Optimize your images for web use.  (FIXME: More Stable Diffusion magic to come!)
+* **Document Summaries:** 📂 Quickly summarize local folders of PDFs, docs, and text files.
 
 **SEO Mastery:**
 
-* **SEO Optimization:** 📈  Boost your content's visibility. Alwrity generates SEO-friendly titles, meta descriptions, tags, and categories. 
+* **SEO Optimization:** 📈  Boost your content's visibility. Alwrity generates SEO-friendly titles, meta descriptions, tags, and categories.
+* **DataForSEO SEO Audit:** 📊 Analyze any URL using DataForSEO to uncover keyword opportunities and on-page improvements.
 
 **🤖  Streamlined Content Publishing:**
 
