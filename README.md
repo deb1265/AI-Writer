@@ -59,6 +59,28 @@ By bringing these powerful solutions together, Alwrity ensures a streamlined wor
 >	```
 >	</details>
 > </p>
+
+### Option 3). **Deploy Alwrity to Vercel**
+Clone the repo, copy `.env.example` to `.env` and add your API keys.
+
+```bash
+npm i -g vercel
+vercel --prod
+```
+
+Vercel uses `vercel.json` and `api/index.py` to launch the Streamlit server.
+Set your environment variables in the Vercel dashboard for full functionality.
+**Required Environment Variables**
+Fill these variables in `.env` and in Vercel:
+- `GPT_PROVIDER`
+- `GEMINI_API_KEY` or `OPENAI_API_KEY`
+- `DATAFORSEO_LOGIN` and `DATAFORSEO_PASSWORD`
+- `METAPHOR_API_KEY`, `TAVILY_API_KEY`, `SERPER_API_KEY`
+- `STABILITY_API_KEY`
+- `TINIFY_API_KEY`
+- `FIRECRAWL_API_KEY`
+
+
 ---
 Still stuck, [Open issue here](https://github.com/AJaySi/AI-Writer/issues) & Someone will bail you out.
 > ![Alwrity Documentation is here for more details](https://github.com/AJaySi/AI-Writer/wiki)
@@ -109,6 +131,7 @@ Still stuck, [Open issue here](https://github.com/AJaySi/AI-Writer/issues) & Som
 |---------------------------------------|---------------------------------------------------------------------------|
 | AI Content Outline Generator       | Generates outlines based on keywords gathered from web research.               |
 | AI SEO - Generate rich snippet from url | Creates structured data for rich snippets (e.g., reviews, recipes) |
+| DataForSEO SEO Analyzer           | Comprehensive SEO audit and keyword ideas powered by DataForSEO |
 
 **AI Content Planning Tools:**
 
@@ -124,7 +147,7 @@ Still stuck, [Open issue here](https://github.com/AJaySi/AI-Writer/issues) & Som
 | Tool                                  | Description                                                                 |
 |---------------------------------------|---------------------------------------------------------------------------|
 | AI Web Researcher                  | Conducts comprehensive web research and analysis using various methods.        |
-| Talk to your Docs (WIP)            | Write content from your local documents of any type (multi-modal)               |
+| Doc Summarizer                     | Summarize local documents (txt, pdf, docx) into concise notes |
 
 **Integrations:**
 
@@ -161,11 +184,13 @@ Still stuck, [Open issue here](https://github.com/AJaySi/AI-Writer/issues) & Som
 
 **📸  Visualize Your Content:**
 
-* **Image Generation and Processing:**  ✨  Create stunning images based on your blog content using DALL-E 3 and Stable Diffusion.  Optimize your images for web use.  (FIXME: More Stable Diffusion magic to come!) 
+* **Image Generation and Processing:**  ✨  Create stunning images based on your blog content using DALL-E 3 and Stable Diffusion.  Optimize your images for web use.  (FIXME: More Stable Diffusion magic to come!)
+* **Document Summaries:** 📂 Quickly summarize local folders of PDFs, docs, and text files.
 
 **SEO Mastery:**
 
-* **SEO Optimization:** 📈  Boost your content's visibility. Alwrity generates SEO-friendly titles, meta descriptions, tags, and categories. 
+* **SEO Optimization:** 📈  Boost your content's visibility. Alwrity generates SEO-friendly titles, meta descriptions, tags, and categories.
+* **DataForSEO SEO Audit:** 📊 Analyze any URL using DataForSEO to uncover keyword opportunities and on-page improvements.
 
 **🤖  Streamlined Content Publishing:**
 
