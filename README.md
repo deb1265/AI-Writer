@@ -59,6 +59,28 @@ By bringing these powerful solutions together, Alwrity ensures a streamlined wor
 >	```
 >	</details>
 > </p>
+
+### Option 3). **Deploy Alwrity to Vercel**
+Clone the repo, copy `.env.example` to `.env` and add your API keys.
+
+```bash
+npm i -g vercel
+vercel --prod
+```
+
+Vercel uses `vercel.json` and `api/index.py` to launch the Streamlit server.
+Set your environment variables in the Vercel dashboard for full functionality.
+**Required Environment Variables**
+Fill these variables in `.env` and in Vercel:
+- `GPT_PROVIDER`
+- `GEMINI_API_KEY` or `OPENAI_API_KEY`
+- `DATAFORSEO_LOGIN` and `DATAFORSEO_PASSWORD`
+- `METAPHOR_API_KEY`, `TAVILY_API_KEY`, `SERPER_API_KEY`
+- `STABILITY_API_KEY`
+- `TINIFY_API_KEY`
+- `FIRECRAWL_API_KEY`
+
+
 ---
 Still stuck, [Open issue here](https://github.com/AJaySi/AI-Writer/issues) & Someone will bail you out.
 > ![Alwrity Documentation is here for more details](https://github.com/AJaySi/AI-Writer/wiki)
