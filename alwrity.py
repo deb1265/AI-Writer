@@ -14,12 +14,21 @@ from lib.utils.ui_setup import setup_ui, setup_tabs
 from lib.utils.alwrity_utils import ai_agents_team, ai_social_writer
 from lib.utils.file_processor import load_image, read_prompts, write_prompts
 from lib.utils.voice_processing import record_voice
+from lib.utils.document_rag import process_folder
 
 
 
 def process_folder_for_rag(folder_path):
-    """Placeholder for the process_folder_for_rag function."""
-    st.write(f"This is a placeholder for processing the folder: {folder_path}")
+    """Summarize documents from the given folder using RAG."""
+    if not os.path.isdir(folder_path):
+        st.error("Provided folder path is invalid")
+        return
+    with st.spinner("Analyzing documents..."):
+        summary = process_folder(folder_path)
+    if summary:
+        st.markdown(summary)
+    else:
+        st.warning("No supported documents found to summarize.")
 
 
 def save_config(config):

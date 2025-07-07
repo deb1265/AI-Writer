@@ -9,6 +9,7 @@ from lib.ai_seo_tools.google_pagespeed_insights import google_pagespeed_insights
 from lib.ai_seo_tools.on_page_seo_analyzer import analyze_onpage_seo
 from lib.ai_seo_tools.weburl_seo_checker import url_seo_checker
 from lib.ai_marketing_tools.backlinking_ui_streamlit import backlinking_ui
+from .dataforseo_tools import run_dataforseo_audit
 
 
 def ai_seo_tools():
@@ -34,7 +35,8 @@ def ai_seo_tools():
         "⚡ Run Google PageSpeed Insights",
         "🔍 Analyze On-Page SEO",
         "🌐 URL SEO Checker",
-        "🔗 AI Backlinking Tool"
+        "🔗 AI Backlinking Tool",
+        "📊 DataForSEO SEO Audit"
     ]
     
     # User selection of SEO tools using radio buttons
@@ -85,3 +87,6 @@ def ai_seo_tools():
     elif choice == "🔗 AI Backlinking Tool":
         # Run AI Backlinking tool for link-building opportunities
         backlinking_ui()
+
+    elif choice == "📊 DataForSEO SEO Audit":
+        run_dataforseo_audit()
