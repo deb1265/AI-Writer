@@ -28,8 +28,17 @@ def setup_ui():
 
 def setup_tabs():
     """Sets up the main tabs in the Streamlit app."""
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
-        ["📅Content Planning", " 📝🤖AI Writers", "🤝🤖Agents Teams", "🛠️🔍AI SEO tools", "📱AI Social Tools", " 💬Ask Alwrity"])
+    tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(
+        [
+            "📅Content Planning",
+            " 📝🤖AI Writers",
+            "🤝🤖Agents Teams",
+            "🛠️🔍AI SEO tools",
+            "📱AI Social Tools",
+            " 💬Ask Alwrity",
+            "🧠 Doc Summarizer",
+        ]
+    )
     with tab1:
         content_planning_tools()
 
@@ -50,3 +59,7 @@ def setup_tabs():
         st.markdown("Create a collection by uploading files (PDF, MD, CSV, etc), or crawl a data source (Websites, more sources coming soon.")
         st.markdown("One can ask/chat, summarize and do semantic search over the uploaded data")
         # alwrity_chat_docqa()
+
+    with tab7:
+        from alwrity import alwrity_brain
+        alwrity_brain()
