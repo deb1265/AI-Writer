@@ -81,6 +81,8 @@ Fill these variables in `.env` and in Vercel:
 - `FIRECRAWL_API_KEY`
 - `PORT` (defaults to 3000 if unset)
 
+The repo includes a `.vercelignore` file that excludes GIFs and other large workspace assets to keep the deployment package small.
+
 
 ---
 Still stuck, [Open issue here](https://github.com/AJaySi/AI-Writer/issues) & Someone will bail you out.

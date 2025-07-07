@@ -1,16 +1,26 @@
 import streamlit as st
 import os
 import json
-import base64
 from datetime import datetime
 
 from lib.utils.config_manager import save_config
-from lib.utils.ui_setup import setup_ui
+from lib.utils.ui_setup import setup_ui, setup_tabs
 from lib.utils.api_key_manager import check_all_api_keys
 from dotenv import load_dotenv
-from lib.utils.content_generators import ai_writers, content_planning_tools, blog_from_keyword, story_input_section, essay_writer, ai_news_writer, ai_finance_ta_writer, write_ai_prod_desc, do_web_research, competitor_analysis, ai_agents_content_planner
+from lib.utils.content_generators import (
+    ai_writers,
+    content_planning_tools,
+    blog_from_keyword,
+    story_input_section,
+    essay_writer,
+    ai_news_writer,
+    ai_finance_ta_writer,
+    write_ai_prod_desc,
+    do_web_research,
+    competitor_analysis,
+    ai_agents_content_planner,
+)
 from lib.utils.seo_tools import ai_seo_tools
-from lib.utils.ui_setup import setup_ui, setup_tabs
 from lib.utils.alwrity_utils import ai_agents_team, ai_social_writer
 from lib.utils.file_processor import load_image, read_prompts, write_prompts
 from lib.utils.voice_processing import record_voice
@@ -29,17 +39,6 @@ def process_folder_for_rag(folder_path):
         st.markdown(summary)
     else:
         st.warning("No supported documents found to summarize.")
-
-
-def save_config(config):
-    """
-    Saves the provided configuration dictionary to a JSON file specified by the environment variable.
-    """
-    try:
-        with open(os.getenv("ALWRITY_CONFIG"), "w") as config_file:
-            json.dump(config, config_file, indent=4)
-    except Exception as e:
-        st.error(f"An error occurred while saving the configuration: {e}")
 
 
 # Sidebar configuration

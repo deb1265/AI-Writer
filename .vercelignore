@@ -1,0 +1,6 @@
+*.gif
+*.mp4
+lib/workspace/alwrity_content/
+lib/workspace/alwrity_web_research/
+lib/workspace/my_content_team/
+__pycache__/
